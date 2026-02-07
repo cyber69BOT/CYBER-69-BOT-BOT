@@ -1,36 +1,101 @@
-name: Node.js CI
-
-on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [20.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
-    steps:
-    # Step to check out the repository code
-    - uses: actions/checkout@v2
-
-    # Step to set up the specified Node.js version
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ matrix.node-version }}
-
-    # Step to install dependencies
-    - name: Install dependencies
-      run: npm install
-
-    # Step to run the bot with the correct port
-    - name: Start the bot
-      env:
-        PORT: 8080
-      run: npm start
+[
+    {
+        "key": "dbln",
+        "value": "%7B%2261574782693737%22%3A%22itliyCqV%22%7D",
+        "domain": "facebook.com",
+        "path": "/login/device-based/",
+        "hostOnly": false,
+        "creation": "2026-02-07T22:41:17.545Z",
+        "lastAccessed": "2026-02-07T22:41:17.546Z"
+    },
+    {
+        "key": "datr",
+        "value": "30eGaTs7biCbc32GI9P8gyQy",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2026-02-07T22:41:17.546Z",
+        "lastAccessed": "2026-02-07T22:41:17.546Z"
+    },
+    {
+        "key": "sb",
+        "value": "4EeGaZq9UKtq4sa0AdDNM53D",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2026-02-07T22:41:17.546Z",
+        "lastAccessed": "2026-02-07T22:41:17.546Z"
+    },
+    {
+        "key": "locale",
+        "value": "en_GB",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2026-02-07T22:41:17.546Z",
+        "lastAccessed": "2026-02-07T22:41:17.546Z"
+    },
+    {
+        "key": "vpd",
+        "value": "v1%3B702x360x2",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2026-02-07T22:41:17.546Z",
+        "lastAccessed": "2026-02-07T22:41:17.546Z"
+    },
+    {
+        "key": "pas",
+        "value": "61566929421511%3AGstGGXkE43%2C61574782693737%3ACsmv2RAMak",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2026-02-07T22:41:17.546Z",
+        "lastAccessed": "2026-02-07T22:41:17.546Z"
+    },
+    {
+        "key": "wl_cbv",
+        "value": "v2%3Bclient_version%3A3070%3Btimestamp%3A1770498963",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2026-02-07T22:41:17.546Z",
+        "lastAccessed": "2026-02-07T22:41:17.546Z"
+    },
+    {
+        "key": "m_pixel_ratio",
+        "value": "2",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2026-02-07T22:41:17.546Z",
+        "lastAccessed": "2026-02-07T22:41:17.546Z"
+    },
+    {
+        "key": "wd",
+        "value": "360x806",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2026-02-07T22:41:17.546Z",
+        "lastAccessed": "2026-02-07T22:41:17.546Z"
+    },
+    {
+        "key": "sfiu",
+        "value": "AYhQ11ky_o9jsfgxwlUbitskcZjxqZLneisaJLruo-np0wed_-FrWYEF-NgM5EEuwNkjm1wBq5Jaw_OBulkE4SDx29Mr8VXSTr7Nrm4ID22vxWL2ehS5nv8hCXAsAUCVchGmv8SmjrghJDh_L2zGcIEznE-R0b_693xmNxTQEtd_tXftwL6ZDVr4T_2qS6NwSQEH6k3Z5p1fnQUo51dKNiUC32sA3_-BtVHU3GaHwrFNNZ_7MvnPTu23rggZPTbpTcQz5T-aZT36W7pm3BTiFc-z",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2026-02-07T22:41:17.546Z",
+        "lastAccessed": "2026-02-07T22:41:17.546Z"
+    },
+    {
+        "key": "fr",
+        "value": "0ipuIaneEhyg5SCJf.AWcu-3nfnnOk72mIzo7IjojCu9bRPDRa8TEArvBC8Kb4WEPpB9U.Bphkfg..AAA.0.0.Bph7-F.AWem_AZptyncq4D9AxddyIH1MPk",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2026-02-07T22:41:17.546Z",
+        "lastAccessed": "2026-02-07T22:41:17.546Z"
+    }
+]
